@@ -1,33 +1,25 @@
 {
-<<<<<<< HEAD
-  "name": "react_node_heroku_app",
-  "version": "0.1.0",
-  "private": true,
-=======
   "name": "products-server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
->>>>>>> parent of ab1a9aeb... add start script
-  "dependencies": {
-    "compression": "^1.7.3",
-    "express": "^4.16.4",
-    "morgan": "^1.9.1",
-    "react": "^16.8.2",
-    "react-dom": "^16.8.2",
-    "react-scripts": "2.1.5"
-  },
-  "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.7.3",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "mysql": "^2.16.0",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "react-scripts": "2.1.5"
   },
   "eslintConfig": {
     "extends": "react-app"
