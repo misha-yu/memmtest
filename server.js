@@ -17,11 +17,21 @@ const dev = app.get('env') != 'production'
 // try to connect to database
 const SELECT_ALL_PRODUCTS_QUERY = 'SELECT * FROM products'; // this is a request to db, which I don't have
 const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'Misha17071977',
+  host: 'eu-cdbr-west-02.cleardb.net',
+  user: 'b21add02c8e9f2',
+  password: '17bc1bca',
   database: 'react_sql',
   insecureAuth: true
+});
+
+connection.connect( (err) => {
+  console.log("trying to connect to DTB");
+  if (err){
+    console.log(">>> "+err);
+    return err;
+  }else{
+    console.log('CONNECTED');
+  }
 });
 
 
