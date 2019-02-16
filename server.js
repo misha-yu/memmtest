@@ -8,10 +8,22 @@ const normalizePort = port => parseInt(port, 10);
 const PORT = normalizePort(process.env.PORT || 5000);
 
 //const cors = require ('cors');
-//const mysql = require('mysql'); //zzz
+const mysql = require('mysql'); //zzz
 
 const app = express();
 const dev = app.get('env') != 'production'
+
+
+// try to connect to database
+const SELECT_ALL_PRODUCTS_QUERY = 'SELECT * FROM products'; // this is a request to db, which I don't have
+const connection = mysql.createConnection({
+  host: 'localhost',
+  user: 'root',
+  password: 'Misha17071977',
+  database: 'react_sql',
+  insecureAuth: true
+});
+
 
 if (!dev) {
   app.disable('x-powered-by');
