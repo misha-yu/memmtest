@@ -1,7 +1,20 @@
 {
+<<<<<<< HEAD
   "name": "react_node_heroku_app",
   "version": "0.1.0",
   "private": true,
+=======
+  "name": "products-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+>>>>>>> parent of ab1a9aeb... add start script
   "dependencies": {
     "compression": "^1.7.3",
     "express": "^4.16.4",
