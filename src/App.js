@@ -20,7 +20,7 @@ componentDidMount(){
 server_urll = "https://memm-heroku.herokuapp.com";
 
 getProducts = _ => {
-  fetch(this.server_urll + '/products')
+  fetch('https://memm-heroku.herokuapp.com/products')
   .then(response => response.json())
   .then(response => this.setState({ products: response.data }))
   .catch(err => console.error(err))
@@ -28,7 +28,7 @@ getProducts = _ => {
 
 addProduct = _ => {
   const {product} = this.state;
-  fetch(this.server_urll + `/products/add?name=${product.name}&price=${product.price}`)
+  fetch(`https://memm-heroku.herokuapp.com/products/add?name=${product.name}&price=${product.price}`)
   .then(this.getProducts)
   .catch(err => console.error(err))
 }
