@@ -3,23 +3,53 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+
+state  = {
+  products : [],
+  product: {
+    name: 'sample product',
+    price: 20
+  }
+}
+
+componentDidMount(){
+  this.getProducts();
+}
+
+//server_urll = "http://localhost:5000";
+server_urll = "https://memm-heroku.herokuapp.com";
+
+getProducts = _ => {
+  fetch(this.server_urll + '/products')
+  .then(response => response.json())
+  .then(response => this.setState({ products: response.data }))
+  .catch(err => console.error(err))
+  }
+
+addProduct = _ => {
+  const {product} = this.state;
+  fetch(this.server_urll + `/products/add?name=${product.name}&price=${product.price}`)
+  .then(this.getProducts)
+  .catch(err => console.error(err))
+}
+
+  renderProduct = ({product_id, name}) => <div key={product_id}>{name}</div>
+
   render() {
+    const {products, product} = this.state;
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React wow man
-          </a>
-        </header>
+        {products.map(this.renderProduct)}
+        <div>
+          <input 
+          value={product.name} 
+          onChange={ e => this.setState({ product: {...product, name: e.target.value} })}/>
+          <input 
+          value={product.price} 
+          onChange={ e => this.setState({ product: {...product, price: e.target.value} })}
+          />
+          <button onClick={this.addProduct}>ADD PRODUCT</button>
+        </div>
       </div>
     );
   }
