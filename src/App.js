@@ -17,7 +17,7 @@ componentDidMount(){
 }
 
 //server_urll = "http://localhost:5000";
-server_urll = "https://memm-heroku.herokuapp.com/";
+server_urll = "https://memm-heroku.herokuapp.com";
 
 getProducts = _ => {
   fetch(this.server_urll + '/products')
