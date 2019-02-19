@@ -11,6 +11,7 @@ const PORT = normalizePort(process.env.PORT || 5000);
 
 //const cors = require ('cors');
 
+//tratata
 const app = express();
 const dev = app.get('env') != 'production';
 
