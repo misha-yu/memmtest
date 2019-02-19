@@ -6,7 +6,7 @@ import './App.css';
 
 class App extends Component {
   
-  let products = [];
+  //let products = [];
 
   state  = {
     products : [],
