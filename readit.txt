@@ -8,3 +8,4 @@
 
 
 Настрокйи базы данных: mysql://b21add02c8e9f2:17bc1bca@eu-cdbr-west-02.cleardb.net/heroku_f436156b9325bd8?reconnect=true
+
