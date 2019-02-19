@@ -16,7 +16,7 @@ const app = express();
 const dev = app.get('env') != 'production';
 
 app.use(cors());
-
+//אפûג
 
 // try to connect to database
 const connection = mysql.createConnection({
