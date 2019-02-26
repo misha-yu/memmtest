@@ -3,8 +3,11 @@
 Технологии используемые в данном проекте:
 - https://github.com/facebook/create-react-app - создает структура реакт приложения
 - https://github.com/expressjs/express - экспресс, фрэмворк для node.js
-- https://github.com/mars/create-react-app-buildpack - создавалка билдпака для Хероку. Вроде нужная штука ...
+- https://github.com/mars/create-react-app-buildpack - создавалка билдпака для Хероку.
 Еще для Хероку надо создать Procfile - он поясняет на чем работает сервак
+
+Еще ставится bootstrap for react ... надо ставить через npm, сначала dependencie а потом надо ставить отдельно bootstrap ...
+Еще надо react-router: yarn add react-router-dom@next .   Для блокировки путей на сервере, надо прописать
 
 
 Настрокйи базы данных: mysql://b21add02c8e9f2:17bc1bca@eu-cdbr-west-02.cleardb.net/heroku_f436156b9325bd8?reconnect=true

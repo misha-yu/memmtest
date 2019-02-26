@@ -1,33 +1,133 @@
-.App {
+/* Variables */
+/* line 21, /Users/mikhailyurchenkov/GoogleDriveLoomx/Misha_W_2019/memm.me/html_1-st_stage_Demonstrator/scss/0tech_demo.scss */
+a{
+  color: inherit;
+}
+
+.smallTitle {
+  font-family: CabinCondensed-Regular;
+  font-size: 14px;
+  color: #848080;
+  letter-spacing: 0;
   text-align: center;
+  padding-top: 9px; }
+
+/* line 31, /Users/mikhailyurchenkov/GoogleDriveLoomx/Misha_W_2019/memm.me/html_1-st_stage_Demonstrator/scss/0tech_demo.scss */
+.hero_img {
+  text-align: center;
+  padding-top: 10px; }
+
+/* line 36, /Users/mikhailyurchenkov/GoogleDriveLoomx/Misha_W_2019/memm.me/html_1-st_stage_Demonstrator/scss/0tech_demo.scss */
+.tabs_top {
+  font-family: OpenSans-Regular;
+  font-size: 20px;
+  color: #848080;
+  letter-spacing: 0;
+  text-align: center;
+  padding-top: 4px; }
+
+/* line 45, /Users/mikhailyurchenkov/GoogleDriveLoomx/Misha_W_2019/memm.me/html_1-st_stage_Demonstrator/scss/0tech_demo.scss */
+.tab_active {
+  color: #77BA99 !important;
+  letter-spacing: 0;
+  text-decoration: underline  !important; }
+
+/* line 51, /Users/mikhailyurchenkov/GoogleDriveLoomx/Misha_W_2019/memm.me/html_1-st_stage_Demonstrator/scss/0tech_demo.scss */
+.btn2 {
+  background-color: #CACACA;
+  border-radius: 11px;
+  height: 39px;
+  cursor: pointer;
+  width: 220px; }
+  /* line 58, /Users/mikhailyurchenkov/GoogleDriveLoomx/Misha_W_2019/memm.me/html_1-st_stage_Demonstrator/scss/0tech_demo.scss */
+  .btn2:hover {
+    transition-duration: 0.8s;
+    color: #5F5C5C;
+    background-color: #5F5C5C; }
+    /* line 62, /Users/mikhailyurchenkov/GoogleDriveLoomx/Misha_W_2019/memm.me/html_1-st_stage_Demonstrator/scss/0tech_demo.scss */
+    .btn2:hover .btn2_in {
+      transition-duration: 0.8s;
+      border-color: #5F5C5C;
+      width: 100%; }
+
+/* line 69, /Users/mikhailyurchenkov/GoogleDriveLoomx/Misha_W_2019/memm.me/html_1-st_stage_Demonstrator/scss/0tech_demo.scss */
+.btn2_in {
+  border-color: #AFAFAF;
+  border-radius: 11px;
+  height: 36px;
+  padding-top: 4px;
+  background-color: #FFFFFF;
+  border: 1px solid #CACACA;
+  font-size: 17px;
+  color: #848080;
+  letter-spacing: 0;
+  text-align: center; }
+
+/* line 83, /Users/mikhailyurchenkov/GoogleDriveLoomx/Misha_W_2019/memm.me/html_1-st_stage_Demonstrator/scss/0tech_demo.scss */
+.devider {
+  margin-top: 20px;
+  margin-bottom: 22px;
+  height: 2px;
+  background-color: #EFEBEB;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  padding: 0px !important;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  /* IE6-9 */ }
+
+/* line 103, /Users/mikhailyurchenkov/GoogleDriveLoomx/Misha_W_2019/memm.me/html_1-st_stage_Demonstrator/scss/0tech_demo.scss */
+.container_style {
+  max-width: 720px;
+  width: 320px;
+  border: solid 1px;
+  border-color: #CACACA;
+  margin-top: 30px;
+  min-height: 568px; }
+
+/* line 112, /Users/mikhailyurchenkov/GoogleDriveLoomx/Misha_W_2019/memm.me/html_1-st_stage_Demonstrator/scss/0tech_demo.scss */
+.second_title {
+  font-family: OpenSans-Regular;
+  font-size: 18px;
+  color: #5F5C5C;
+  letter-spacing: 0;
+  text-align: center;
+  padding-bottom: 16px; }
+
+/* line 121, /Users/mikhailyurchenkov/GoogleDriveLoomx/Misha_W_2019/memm.me/html_1-st_stage_Demonstrator/scss/0tech_demo.scss */
+.tokens_list_style {
+  font-family: OpenSans-Regular;
+  font-size: 16px;
+  color: #848080;
+  letter-spacing: 0; 
+  padding-left: 0px !important;
+  margin-left: 0px !important;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
+/* line 128, /Users/mikhailyurchenkov/GoogleDriveLoomx/Misha_W_2019/memm.me/html_1-st_stage_Demonstrator/scss/0tech_demo.scss */
+.input_style {
+  width: 100%;
+  border: 2px solid #AFAFAF;
+  margin-bottom: 18px;
+  color: #848080;
+  font-size: 17px;
+  padding-left: 20px; }
+  /* line 136, /Users/mikhailyurchenkov/GoogleDriveLoomx/Misha_W_2019/memm.me/html_1-st_stage_Demonstrator/scss/0tech_demo.scss */
+  .input_style::placeholder {
+    color: #AFAFAF; }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+/* line 141, /Users/mikhailyurchenkov/GoogleDriveLoomx/Misha_W_2019/memm.me/html_1-st_stage_Demonstrator/scss/0tech_demo.scss */
+.Rink_Notification {
+  height: 412px;
+  padding-top: 180px;
+  background-color: #F7F7F7;
+  margin-top: 10px;
+  font-family: OpenSans-Bold;
+  font-size: 18px;
+  color: #F0A202;
+  letter-spacing: 0;
+  text-align: center; }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*# sourceMappingURL=0tech_demo.css.map */
