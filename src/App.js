@@ -66,7 +66,7 @@ class App extends React.Component {
 
 export default connect (
   state => ({
-    Tokens_store: state.check_tokens_reducer
+    Tokens_store: state.check_tokens_reducer.tokensList
   }),
   dispatch => ({
     SetTokensList: (token) => { // Это экшн...

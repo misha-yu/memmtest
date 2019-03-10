@@ -13,6 +13,7 @@ class Сheck_tokens extends React.Component {
   }
 
   onChangeFn (e) {
+    console.log('>>>>>>> '+this.props.Tokens_store);
     if (e.key === 'Enter') {
       this.props.SetTokensList(e.target.value);
       e.target.value = '';
@@ -34,7 +35,7 @@ class Сheck_tokens extends React.Component {
                 <div className="col tokens_list_style">
                   <ul>
                    {this.props.Tokens_store.map((tokensElement, i) =>
-                      <li key={i}>{tokensElement}</li>
+                    <li key={i}>{tokensElement}</li>
                     )}
                   </ul>
                 </div>
