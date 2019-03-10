@@ -9,5 +9,8 @@
 Еще ставится bootstrap for react ... надо ставить через npm, сначала dependencie а потом надо ставить отдельно bootstrap ...
 Еще надо react-router: yarn add react-router-dom@next .   Для блокировки путей на сервере, надо прописать
 
+Ставим redux
+и! Ставим react-redux - это какбы "мост" между рекуском и реактом, TERMINAL:  npm install react-redux --save
+
 
 Настрокйи базы данных: mysql://b21add02c8e9f2:17bc1bca@eu-cdbr-west-02.cleardb.net/heroku_f436156b9325bd8?reconnect=true

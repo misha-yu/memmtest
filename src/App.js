@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-pascal-case */
 import React from 'react';
 import './App.css';
 import Create_new_token from './components/create_new_token/Create_new_token';
@@ -6,57 +7,11 @@ import Authorize from './components/Authorize/Authorize';
 import Header from './components/Header';
 //import {Router, Route, browserHistory, IndexRout} from 'react-router'; 
 import {BrowserRouter as Router, NavLink, Route} from 'react-router-dom';
+import {createStore, combineReducers, applyMiddleware} from 'redux';
+import { connect } from 'react-redux';
+import { dispatch } from 'rxjs/internal/observable/pairs';
 
-////REDUX ++++
-import {createStore} from 'redux';
 
-const initialState = {
-  result: 1,
-  lastValues: []
-};
-
-const reducer = (state = initialState, action) => { // state = initialState  - так мы устанавливаем начальное значение стэйта как объект initialState
-  switch (action.type){
-    case "ADD":
-        //state = state + action.payload; // так мы просто добавляем значение в стэйт
-
-        // А так мы приравниевам к стэйты целый объект. 
-        //И! Создаем новоый стэйт, чтобы потом по этим стэйтам можно бы было передвигаться:
-        state = {
-          //result:state.result,
-          //lastValues: state.lastValues,
-          ...state, // - Этот код аналогичен двум закоменченным строкам выше
-          result: state.result + action.payload
-        };
-        break;
-    case "SUBTRACT":
-        state = {
-          //result:state.result,
-          //lastValues: state.lastValues,
-          ...state, // - Этот код аналогичен двум закоменченным строкам выше
-          result: state.result + action.payload
-        };
-    break;
-  }
-  return state;
-};
-
-const store = createStore(reducer, 100);
-
-store.subscribe( () => {
-  console.log("Store updated!", store.getState());
-});
-
-store.dispatch({
-    type: "ADD",
-    payload: 10
-});
-
-store.dispatch({
-  type: "SUBTRACT",
-  payload: 90
-});
-////REDUX ----
 
 class App extends React.Component {
 
@@ -91,7 +46,7 @@ class App extends React.Component {
                 props =>(
                   <div>
                   < Create_new_token sign={CreateNewProps} CreateNewTokenMethod={this.Create_new_token_parent}/>
-                  < Сheck_tokens/>
+                  < Сheck_tokens SetTokensList={this.props.SetTokensList} Tokens_store={this.props.Tokens_store} />
                   </div>
                 )}/>
 
@@ -109,6 +64,17 @@ class App extends React.Component {
   }
 }
 
+export default connect (
+  state => ({
+    Tokens_store: state.check_tokens_reducer
+  }),
+  dispatch => ({
+    SetTokensList: (token) => { // Это экшн...
+      //const payload = {token}
+      dispatch ({type: 'SET_TOKENS_LIST', payload:token})
+    }
+  })
+)(App);
 
 
-export default App;
+//export default App;
