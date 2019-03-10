@@ -7,7 +7,7 @@ import Authorize from './components/Authorize/Authorize';
 import Header from './components/Header';
 //import {Router, Route, browserHistory, IndexRout} from 'react-router'; 
 import {BrowserRouter as Router, NavLink, Route} from 'react-router-dom';
-import {createStore, combineReducers, applyMiddleware} from 'redux';
+import {bindActionCreators} from 'redux';
 import { connect } from 'react-redux';
 import { dispatch } from 'rxjs/internal/observable/pairs';
 
@@ -64,15 +64,16 @@ class App extends React.Component {
   }
 }
 
+const SetTokensList = (token) => { 
+  return {type: 'SET_TOKENS_LIST', payload:token}
+}
+
 export default connect (
   state => ({
     Tokens_store: state.check_tokens_reducer.tokensList
   }),
   dispatch => ({
-    SetTokensList: (token) => { // Это экшн...
-      //const payload = {token}
-      dispatch ({type: 'SET_TOKENS_LIST', payload:token})
-    }
+    SetTokensList: bindActionCreators(SetTokensList, dispatch)
   })
 )(App);
 
