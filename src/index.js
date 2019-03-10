@@ -5,7 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker'
 import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
 import { createStore } from 'redux';
-import combineReducers from './reducers/combined_reducers';
+import combineReducers from './store/combined_reducers';
 import {Provider} from 'react-redux';
 
 const store = createStore(combineReducers, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());

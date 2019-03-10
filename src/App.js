@@ -1,15 +1,17 @@
 /* eslint-disable react/jsx-pascal-case */
 import React from 'react';
 import './App.css';
-import Create_new_token from './components/create_new_token/Create_new_token';
-import Сheck_tokens from './components/check_tokens/Check_tokens';
-import Authorize from './components/Authorize/Authorize';
+import Create_new_token from './components/Create_new_token';
+import Сheck_tokens from './components/Check_tokens';
+import Authorize from './components/Authorize';
 import Header from './components/Header';
 //import {Router, Route, browserHistory, IndexRout} from 'react-router'; 
 import {BrowserRouter as Router, NavLink, Route} from 'react-router-dom';
 import {bindActionCreators} from 'redux';
 import { connect } from 'react-redux';
 import { dispatch } from 'rxjs/internal/observable/pairs';
+import {SetTokensList} from './store/check_tokens/actions'
+import Check_tokens_container from './components/Check_tokens_container';
 
 
 
@@ -46,7 +48,8 @@ class App extends React.Component {
                 props =>(
                   <div>
                   < Create_new_token sign={CreateNewProps} CreateNewTokenMethod={this.Create_new_token_parent}/>
-                  < Сheck_tokens SetTokensList={this.props.SetTokensList} Tokens_store={this.props.Tokens_store} />
+                  
+                  <Check_tokens_container/>
                   </div>
                 )}/>
 
@@ -64,9 +67,7 @@ class App extends React.Component {
   }
 }
 
-const SetTokensList = (token) => { 
-  return {type: 'SET_TOKENS_LIST', payload:token}
-}
+
 
 export default connect (
   state => ({

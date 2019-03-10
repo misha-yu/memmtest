@@ -1,5 +1,5 @@
 import React from 'react';
-import App from '../../App';
+import App from '../App';
 
 class Сreate_new_token extends React.Component {
 Create_New_Token () { 
