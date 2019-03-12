@@ -43,7 +43,6 @@ class App extends React.Component {
             
             <Header/>
             
-              
               <Route  path="/loomx" render={
                 props =>(
                   <div>

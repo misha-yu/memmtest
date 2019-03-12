@@ -9,9 +9,10 @@ import combineReducers from './store/combined_reducers';
 import {Provider} from 'react-redux';
 import thunk from 'redux-thunk';
 import {composeWithDevTools} from 'redux-devtools-extension';
+import promise from "redux-promise-middleware";
 
 //const store = createStore(combineReducers, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
-const store = createStore(combineReducers, composeWithDevTools(applyMiddleware(thunk)));
+const store = createStore(combineReducers, composeWithDevTools(applyMiddleware(thunk, promise)));
 
 ReactDOM.render(
 <Provider store={store}>
