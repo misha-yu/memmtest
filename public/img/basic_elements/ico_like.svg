@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="25px" viewBox="0 0 22 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>ico_like</title>
+    <desc>Created with Sketch.</desc>
+    <g id="RESPONSIVE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01_mob-3-copy-10" transform="translate(-8.000000, -387.000000)">
+            <g id="ico_like" transform="translate(8.000000, 387.000000)">
+                <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" opacity="0.0089750744" x="0" y="0" width="22" height="25"></rect>
+                <g id="heart-2" transform="translate(2.000000, 5.000000)" stroke="#848080" stroke-width="1.2">
+                    <path d="M17.4822715,1.46072459 C15.4586335,-0.486908198 12.1774553,-0.486908198 10.1538173,1.46072459 C9.90420938,1.70095758 9.68742187,1.95947819 9.5,2.2312989 C9.31257813,1.95947819 9.09492693,1.70012632 8.84618269,1.46072459 C6.82254472,-0.486908198 3.54136646,-0.486908198 1.51772848,1.46072459 C-0.505909494,3.40835739 -0.505909494,6.56629891 1.51772848,8.5139317 L9.4991363,16.1972309 L17.4822715,8.5139317 C19.5059095,6.56629891 19.5059095,3.40835739 17.4822715,1.46072459 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

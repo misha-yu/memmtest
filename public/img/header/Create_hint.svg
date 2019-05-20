@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="262px" height="70px" viewBox="0 0 262 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Create_hint</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-9.2%" y="-60.0%" width="118.4%" height="220.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="7" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="1-st-Step-for-HTML---Demonstrator" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Create-1" transform="translate(-469.000000, -56.000000)" fill="#848080" fill-rule="nonzero">
+            <g id="Create_hint" transform="translate(480.000000, 56.000000)">
+                <g id="Group">
+                    <rect id="shadow" filter="url(#filter-1)" x="6" y="18" width="228" height="35"></rect>
+                    <path d="M113,10 L120.5,0 L128,10 L241.031618,10 L241.031618,50 L0.0316182082,50 L0.0316182082,10 L113,10 Z" id="Combined-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

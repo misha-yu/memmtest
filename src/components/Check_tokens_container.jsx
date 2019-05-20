@@ -12,9 +12,8 @@ class Сheck_tokens_container extends React.Component {
     return (
       < Сheck_tokens SetTokensList={this.props.SetTokensList} Tokens_store={this.props.Tokens_store} />
     );
-    
   }
-}; 
+};
 
 const putStateToProps = state => {
   return {

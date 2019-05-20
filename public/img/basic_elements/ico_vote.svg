@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="25px" viewBox="0 0 19 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>ico_vote</title>
+    <desc>Created with Sketch.</desc>
+    <g id="1-st-Step-for-HTML---Demonstrator" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-14.000000, -212.000000)">
+            <g id="ico_vote" transform="translate(14.000000, 212.000000)">
+                <g id="Group">
+                    <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" opacity="0.04" x="0" y="0" width="19" height="25"></rect>
+                    <path d="M5.94758017,9.91461537 L5,9.91461537 C3.8954305,9.91461537 3,10.8100459 3,11.9146154 L3,16.5364863 L5.4563168,18.9638126 L5.4563168,20.8297872 C9.05891478,20.8297872 12.0064949,20.8297872 14.2990573,20.8297872 C15.0172375,16.5364863 16.583861,12.4915445 15.7728474,10.1874947 C15.2691075,8.75639434 12.9765451,8.11967599 8.89516033,8.27733959 L8.89516033,2.23265533 C8.89516033,1.41870354 8.23532203,0.758865248 7.42137025,0.758865248 L7.42137025,0.758865248 C6.60741846,0.758865248 5.94758017,1.41870354 5.94758017,2.23265533 L5.94758017,13.1891669" id="Path-2-Copy-4" stroke="#848080" stroke-width="1.2"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

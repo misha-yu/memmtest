@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>header_MOB_hamb</title>
+    <desc>Created with Sketch.</desc>
+    <g id="CMA-Mobile-UF" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01_mob-3-copy-10" transform="translate(-11.000000, -19.000000)" fill-rule="nonzero">
+            <g id="header_MOB_hamb" transform="translate(11.000000, 19.000000)">
+                <rect id="Rectangle" fill="#FFFFFF" opacity="0.00727771577" x="0" y="0" width="40" height="40"></rect>
+                <g transform="translate(11.333333, 16.000000)" id="Path-5" stroke="#979797" stroke-linecap="round" stroke-width="4">
+                    <path d="M0.666666667,0.5 L17.6666667,0.5"></path>
+                    <path d="M0.666666667,7.5 L17.6666667,7.5"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="24px" viewBox="0 0 28 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>fb_ico_login</title>
+    <desc>Created with Sketch.</desc>
+    <g id="1-st-Step-for-HTML---Demonstrator" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-134.000000, -93.000000)" fill-rule="nonzero">
+            <g id="fb_ico_login" transform="translate(134.000000, 93.000000)">
+                <rect id="Rectangle-Copy" fill="#FFFFFF" opacity="0.01" x="0" y="0" width="28" height="24"></rect>
+                <g id="F_icon" transform="translate(1.000000, 0.000000)">
+                    <path d="M22.6754774,24 C23.4068843,24 24,23.4068889 24,22.6753014 L24,1.32460548 C24,0.592924852 23.4069774,0 22.6754774,0 L1.32461576,0 C0.592929454,0 0,0.592924852 0,1.32460548 L0,22.6753014 C0,23.4067958 0.592836328,24 1.32461576,24 L22.6754774,24 Z" id="Blue_1_" fill="#3C5A99"></path>
+                    <path d="M16.7014135,24 L16.7014135,14.6742984 L19.8462504,14.6742984 L20.3171452,11.039907 L16.7014135,11.039907 L16.7014135,8.71957769 C16.7014135,7.66733751 16.9949716,6.95027055 18.5109222,6.95027055 L20.4444444,6.94942958 L20.4444444,3.69880075 C20.1100491,3.65450968 18.9622902,3.55555556 17.6269619,3.55555556 C14.8392389,3.55555556 12.9306883,5.24926885 12.9306883,8.35964259 L12.9306883,11.039907 L9.77777778,11.039907 L9.77777778,14.6742984 L12.9306883,14.6742984 L12.9306883,24 L16.7014135,24 Z" id="f" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
